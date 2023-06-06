@@ -5,6 +5,11 @@ void setup()
 {
   // put your setup code here, to run once:
   testSetup();
+
+}
+
+void loop()
+{
     // put your main code here, to run repeatedly:
   int continuityTestResult = continuityTest();
   int adjacentShortTestResult = adjacentShortTest();
@@ -19,9 +24,4 @@ void setup()
     digitalWrite(GREENLED, HIGH);
   }
   delay(200);
-}
-
-void loop()
-{
-
 }
