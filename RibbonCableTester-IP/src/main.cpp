@@ -10,10 +10,10 @@ void setup()
 
 void loop()
 {
-    // put your main code here, to run repeatedly:
-  //int continuityTestResult = continuityTest();
+  // put your main code here, to run repeatedly:
+  int continuityTestResult = continuityTest();
   int adjacentShortTestResult = adjacentShortTest();
-  if (/*continuityTestResult == EXIT_FAILURE || */adjacentShortTestResult == EXIT_FAILURE)
+  if (continuityTestResult == EXIT_FAILURE || adjacentShortTestResult == EXIT_FAILURE)
   {
     digitalWrite(REDLED, HIGH);
     digitalWrite(GREENLED,LOW);
