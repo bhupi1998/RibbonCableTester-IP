@@ -11,9 +11,9 @@ void setup()
 void loop()
 {
     // put your main code here, to run repeatedly:
-  int continuityTestResult = continuityTest();
+  //int continuityTestResult = continuityTest();
   int adjacentShortTestResult = adjacentShortTest();
-  if (continuityTestResult == EXIT_FAILURE || adjacentShortTestResult == EXIT_FAILURE)
+  if (/*continuityTestResult == EXIT_FAILURE || */adjacentShortTestResult == EXIT_FAILURE)
   {
     digitalWrite(REDLED, HIGH);
     digitalWrite(GREENLED,LOW);
@@ -23,5 +23,5 @@ void loop()
     digitalWrite(REDLED,LOW);
     digitalWrite(GREENLED, HIGH);
   }
-  delay(200);
+  delay(100);
 }
